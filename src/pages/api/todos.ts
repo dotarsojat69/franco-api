@@ -3,7 +3,7 @@ import db from '../../lib/db';
 import Cors from 'cors';
 
 const cors = Cors({
-  origin: 'http://localhost:4200', // Sesuaikan dengan URL frontend Angular Anda
+  origin: 'http://localhost:4200',
   methods: ['GET', 'POST', 'DELETE'],
 });
 
