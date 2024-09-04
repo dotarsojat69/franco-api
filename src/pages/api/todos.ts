@@ -33,7 +33,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 }
 
-async function getTodos(req: NextApiRequest, res: NextApiResponse) {
+async function getTodos(_req: NextApiRequest, res: NextApiResponse) {
   try {
     const [rows] = await db.query('SELECT * FROM todos');
     res.status(200).json(rows);
